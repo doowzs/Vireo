@@ -10,7 +10,7 @@
                 <a class="nav-link" href="{{ route('home') }}">Home</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('docs.index') }}">Docs</a>

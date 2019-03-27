@@ -13,7 +13,7 @@
                 <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Docs</a>
+                <a class="nav-link" href="{{ route('docs.index') }}">Docs</a>
             </li>
         </ul>
         <ul class="navbar-nav nav-flex-icons">

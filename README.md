@@ -20,6 +20,7 @@ Used libraries are (through CDN):
 
 - Bootstrap
 - CookieBanner
+- Fancybox
 - FontAwesome5
 - JQuery
 - MathJax
