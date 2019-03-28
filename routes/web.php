@@ -12,6 +12,7 @@
 */
 
 $router->get('/', ['as' => 'home', 'uses' => 'HomeController@home']);
+$router->get('/legal', ['as' => 'legal', 'uses' => 'HomeController@legal']);
 $router->group(['prefix' => '/blog', 'as' => 'blog'], function () use ($router) {
     $router->get('/', ['as' => 'index', 'uses' => 'BlogController@index']);
     $router->get('/feed', ['as' => 'feed', 'uses' => 'BlogController@feed']);
