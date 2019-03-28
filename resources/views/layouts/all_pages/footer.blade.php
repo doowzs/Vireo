@@ -1,7 +1,7 @@
 <footer class="page-footer font-small blue">
     <div class="footer-copyright text-center py-3 px-3">
         <span>
-            <i class="fas fa-copyright mr-2"></i>
+            <i class="fas fa-copyright mr-1"></i>
             {{ env('APP_AUTHOR') }}
             (2018 - {{ \Carbon\Carbon::today()->format('Y') }})
             All rights reserved.
