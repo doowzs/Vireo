@@ -16,16 +16,6 @@
                 <a class="nav-link" href="{{ route('docs.index') }}">Docs</a>
             </li>
         </ul>
-        <ul class="navbar-nav nav-flex-icons">
-            <li class="nav-item">
-                <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"><i class="fab fa-instagram"></i></a>
-            </li>
-        </ul>
+        @include('layouts.all_pages.social')
     </div>
 </nav>
