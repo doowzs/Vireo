@@ -133,7 +133,8 @@ class Cache extends Command
     {
         $parts = explode('---', $file_raw);
         $item = Yaml::parse($parts[1]);
-        $item['content'] = $this->parser->parse($parts[2]);
+        $item['content'] = key_exists('do_not_parse', $item)
+            ? $parts[2] : $this->parser->parse($parts[2]);
         return $item;
     }
 }
