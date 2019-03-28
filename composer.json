@@ -9,6 +9,7 @@
         "erusev/parsedown": "^1.7",
         "laravel/lumen-framework": "5.8.*",
         "league/flysystem": "^1.0",
+        "symfony/process": "^4.2",
         "symfony/yaml": "^4.2",
         "vlucas/phpdotenv": "^3.3"
     },
