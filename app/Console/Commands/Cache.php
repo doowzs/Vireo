@@ -131,7 +131,7 @@ class Cache extends Command
 
     protected function parseConfigAndContent($file_raw)
     {
-        $parts = explode('---', $file_raw);
+        $parts = explode('---', $file_raw,3);
         $item = Yaml::parse($parts[1]);
         $item['content'] = key_exists('do_not_parse', $item)
             ? $parts[2] : $this->parser->parse($parts[2]);
