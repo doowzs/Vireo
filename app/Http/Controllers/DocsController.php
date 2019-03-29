@@ -26,6 +26,7 @@ class DocsController extends Controller
     {
         $documents = Document::query()
             ->where('published_at', '<=', Carbon::now())
+            ->orderBy('category', 'asc')
             ->orderBy('published_at', 'desc')
             ->get();
         $documents_grouped = [];
