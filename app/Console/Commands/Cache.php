@@ -74,7 +74,7 @@ class Cache extends Command
         foreach ($folders as $folder) {
             $post = $this->parseConfigAndContent($this->fs->read($folder . '/content.md'));
 
-            $pattern = '/<p><img src="(.+\w+)" alt="(.*)"( \/)?><\/p>/';
+            $pattern = '/<img src="(.+\w+)" alt="(.*)"( \/)?>/';
             $replace = '<p class="text-center"><a href="/assets/posts/' . $post['slug'] . '/${1}" data-fancybox data-caption="${2}">'
                 . '<img src="/assets/posts/' . $post['slug'] . '/${1}" class="img-fluid rounded" style="max-width:90%;">' . '</a></p>';
             $post['content'] = preg_replace($pattern, $replace, $post['content']);
@@ -105,7 +105,7 @@ class Cache extends Command
         foreach ($folders as $folder) {
             $document = $this->parseConfigAndContent($this->fs->read($folder . '/content.md'));
 
-            $pattern = '/<p><img src="(.+\w+)" alt="(.*)"( \/)?><\/p>/';
+            $pattern = '/<img src="(.+\w+)" alt="(.*)"( \/)?>/';
             $replace = '<p class="text-center"><a href="/assets/docs/' . $document['slug'] . '/${1}" data-fancybox data-caption="${2}">'
                 . '<img src="/assets/docs/' . $document['slug'] . '/${1}" class="img-fluid rounded" style="max-width:90%;">' . '</a></p>';
             $document['content'] = preg_replace($pattern, $replace, $document['content']);
